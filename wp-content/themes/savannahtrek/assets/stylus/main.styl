@@ -1,0 +1,492 @@
+@import "nib"
+@import "normalize.styl"
+@import "icons.styl"
+
+
+cafeoscuro = #281700
+cafeclaro = #392100
+amarillo = #FFAA00
+amarillo2 = #FFC13D
+*
+	box-sizing border-box
+
+body
+	font-family 'Arial', sans-serif
+	font-size 16px
+	line-height 30px
+	background url('./img/bg.jpg');
+	
+
+ul
+	margin 0
+	padding 0
+	
+
+a
+	text-decoration none
+	transition all .5s ease
+p 
+	margin-top 0
+	margin-bottom 1.25rem
+h1
+h2
+h3
+h4
+h5
+	font-family: 'Anton', sans-serif;
+	margin-top 0
+	font-weight 800
+	color #333333
+h1
+	line-height 45px
+
+img
+	max-width 100%
+	height auto
+input[type="text"]
+input[type="number"]
+input[type="email"]
+input[type="url"]
+textarea
+	height 32px
+	width 100%
+textarea
+	height 90px 
+.txt-center
+	text-align center
+.overflow
+	overflow hidden
+.btn
+.wpcf7-submit
+.submit
+	border none//2px solid #fff
+	font-size inherit
+	color white
+	background 0 0
+	text-align center
+	cursor pointer
+	padding 10px 30px 10px
+	display inline-block
+	text-transform uppercase
+	outline 0
+	position relative
+	transition all .3s ease
+	transform translateZ(0)
+	background-color amarillo
+	&:hover
+		background-color: #000 
+		color white
+.verde
+	background-color #9BB227
+.alignright
+	float right
+	margin-left 1rem
+.alignleft
+	float left
+	margin-right 1rem 
+	
+.iframe
+	width 470px
+	iframe
+		width 100%
+		height 300px	
+.inner
+	max-width 980px
+	margin 0 auto
+	padding-left 1rem
+	padding-right 1rem
+//@media screen and (min-width:980px)
+.header
+	&-top 
+		display flex
+		flex-wrap wrap 
+		justify-content space-around
+		font-family 'Anton'
+		
+		text-transform uppercase
+		height 120px
+		margin-top .8rem
+		margin-bottom 1rem
+	&-tagline
+		width 30%
+		background-color amarillo
+		color white
+		font-size 28px
+		text-align center
+		padding-top 2rem
+	&-branding
+		width 70%
+		background-color cafeoscuro
+		color white
+		overflow hidden
+		font-size 60px
+	&-logo-text
+		display inline-block
+		line-height 120px
+		margin-left 2.5rem
+		font-style italic
+	&-logo
+		float right
+		margin-top .5rem
+		margin-right .5rem
+	&-banner
+		height 344px
+		position relative
+		&-info
+			color white
+			font-family 'Anton'
+			text-transform uppercase
+			font-style italic
+			font-size 2.5rem
+			max-width 380px
+			line-height 2.5rem
+			position absolute
+			top 40%
+			left 2rem
+		.languages
+			position absolute
+			right 1rem
+			bottom 1rem
+			background-color cafeclaro
+			padding .5rem
+			height 33px
+			ul 
+				margin 0
+				padding 0
+				
+			li 
+				display inline-block
+				vertical-align top
+				border-right 1px solid amarillo
+				&:last-child
+					border none
+			a 
+				display block
+				color white
+				
+				padding 0 .5rem
+				line-height 18px
+				&:hover
+					color amarillo2
+	&-menu
+		background-color cafeclaro
+		color amarillo
+		padding .8rem
+		text-align center
+		
+		.menu-item
+			display inline-block
+			vertical-align top;
+			margin .3rem .3rem
+			position relative
+			
+			
+		a 
+			display block
+			color amarillo2
+			box-shadow 1px 1px 2px rgba(0,0,0,.75)
+			padding .5rem 1.5rem
+			text-transform uppercase
+			font-family 'Anton'
+			font-style italic
+			font-size 1.5rem
+			&:hover
+				background-color amarillo2
+				color cafeoscuro
+		.sub-menu
+			display none
+			position absolute
+			background-color cafeoscuro
+			z-index 999
+			li 
+				display block
+		
+	&-btn-menu
+		display none
+
+.main
+	margin 1rem 0 
+	h1
+	h2
+		background-color cafeoscuro
+		padding .5rem
+		color white
+		//display inline-block
+		font-weight normal
+		font-style italic
+		position relative
+		margin-bottom 0
+		text-transform uppercase
+		&:after
+			content ''
+			position: absolute;
+			bottom:  -20px
+			height: 0;
+			width: 0;
+			border: 10px solid transparent;
+			border-top-color: rgba(0, 0, 0, 1);
+			border-right-width: 0;
+			left: 0;
+	h3 
+		color amarillo
+		font-family Arial
+	
+	.entry-content
+		background-color cafeclaro
+		color white
+		padding 1rem
+		margin 0 .6rem
+		overflow hidden
+
+.featured-tours
+	&-title
+		background-color cafeoscuro
+		padding .5rem
+		color white
+		//display inline-block
+		font-weight normal
+		font-style italic
+		position relative
+		margin-bottom 0
+		text-transform uppercase
+		&:after
+			content ''
+			position: absolute;
+			bottom:  -20px
+			height: 0;
+			width: 0;
+			border: 10px solid transparent;
+			border-top-color: rgba(0, 0, 0, 1);
+			border-right-width: 0;
+			left: 0;
+	&-items
+		display flex
+		flex-wrap wrap
+		justify-content space-around
+		
+		.item-tour
+			width 23%
+			background-color cafeclaro
+			min-height 350px
+			color white
+			position relative
+			&-content 
+				padding .5rem .5rem 5rem .5rem
+				
+				ul 
+					margin-left 15px
+				li 
+					font-size 12px
+				h3 
+					color amarillo2
+					text-align center
+					font-family Arial
+				
+			.btn
+				position absolute
+				bottom 0
+				right 0		
+.contact-info
+	float right
+	width 50%
+	p 
+		margin-bottom 0
+.contact-form
+	width 40%
+	
+.want-to-help
+	iframe
+		width 100%
+		height 600px
+.search
+.error404
+.archive
+.single
+.blog
+	.page-title
+		color white
+	.entry-title
+		background-color cafeoscuro
+		padding .5rem
+		color white
+		//display inline-block
+		font-weight normal
+		font-style italic
+		position relative
+		margin-bottom 0
+		text-transform uppercase
+		&:after
+			content ''
+			position: absolute;
+			bottom:  -20px
+			height: 0;
+			width: 0;
+			border: 10px solid transparent;
+			border-top-color: rgba(0, 0, 0, 1);
+			border-right-width: 0;
+			left: 0;
+	.site-content
+		display flex
+		flex-wrap wrap
+		justify-content space-between
+		margin-top 1rem
+		
+	.content-area
+		width 65%
+		color white
+		a 
+			color amarillo2
+		.tour
+		.post
+			margin-bottom 1rem
+			.entry-meta
+			.entry-content
+			.entry-summary
+				background-color cafeclaro
+				padding .5rem
+				margin 0 .6rem
+			.entry-footer
+				background-color cafeoscuro
+				padding .5rem
+				color white
+	.widget-area
+		width 30%
+		background-color cafeoscuro
+		color white
+		padding .5rem 1rem
+		a 
+			color amarillo2
+		.widget-title
+			color amarillo
+			font-weight normal
+		ul 
+			margin-left 35px
+			margin-bottom 1rem
+		.widget_search
+			margin-bottom 1rem
+			input[type="search"]
+				height 32px
+				width 100%
+		.search-submit
+			display none
+.single-tour
+	.content-area
+		a 
+			color white
+.error404
+	.content-area
+		width 100%
+		padding .5rem
+		background-color cafeclaro
+.navigation
+	background-color cafeoscuro
+	padding 1rem
+.comments-area
+	background-color cafeoscuro
+	padding 1rem
+.comments-title
+	color white
+	font-weight normal
+.comment-reply-title
+	color amarillo2
+	font-weight normal
+
+.tours 
+	&-items
+		display flex
+		flex-wrap wrap
+		justify-content space-around
+	&-item 
+		width 48%
+		background-color cafeclaro
+		color white
+		padding .5rem
+		margin-bottom .5rem
+		&-img
+			height 180px
+.cycle-gallery
+	position relative
+	.cycle-prev
+	.cycle-next
+		cursor pointer
+		font-size 2rem
+		background-color amarillo
+		display inline-block
+		padding .5rem
+		position absolute
+		top 45%
+		z-index 200
+		transform translate(0, -50%)
+	
+	.cycle-prev
+		left 0
+	.cycle-next
+		right 0
+		
+	#gallery-1
+		overflow hidden
+		.gallery-item
+			width 480px
+			height 400px
+			overflow hidden
+		img 
+			width 100%
+.gallery-columns-4
+	display flex
+	flex-wrap wrap
+	justify-content space-around
+	.gallery-item
+		width 25%
+		height 150px
+		overflow hidden
+		img
+			width 100%
+.ad-combinations
+	background-color amarillo
+	padding .5rem
+	width 300px
+	color #000
+	text-transform uppercase
+	font-family 'Anton'
+	font-size 3rem
+	line-height 3rem
+	text-align center
+	span
+		color white
+		font-size 3.3rem 
+		
+	
+.footer
+	background-color cafeoscuro
+	color white
+	padding 1rem 0
+	margin-top 10rem
+	position relative
+	.inner
+		overflow hidden
+		position relative
+		z-index 2
+	.bosque
+		height 210px
+		background url('./img/bosque.png') 0 0
+		width 100%
+		position absolute
+		top -160px
+		
+	
+	.site-info
+		float left
+		padding .5rem 1rem 
+		span 
+			display block
+			
+	&-social
+		float right
+		a 
+			display inline-block
+			vertical-align top 
+			color white
+			padding .5rem
+			font-size 1.5rem
+		
+				
