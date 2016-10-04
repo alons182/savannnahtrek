@@ -34,12 +34,34 @@ $( '.cycle-gallery #gallery-1' ).cycle({
         next: '.cycle-next',
         prev: '.cycle-prev'
       });
- /*$("#gallery-1").owlCarousel({
+
+$('.tours-item-link ').magnificPopup({
+        type: 'inline',
+        midClick: true,
+        removalDelay: 500, //delay removal by X to allow out-animation
+        callbacks: {
+            beforeOpen: function() {
+
+                this.st.mainClass = 'mfp-zoom-out';
+                $('body').addClass('mfp-open');
+            },
+            beforeClose: function() {
+
+               
+                $('body').removeClass('mfp-open');
+            }
+
+        }
+
+       
+    });
+ $(".owl-carousel").owlCarousel({
       items : 1,
       autoplay : true,
       loop : true,
       nav : true,
-      navText : ['','']
+      navText : ['<span class="fa fa-angle-left"></span>','<span class="fa fa-angle-right"></span>'],
+      autoplayTimeout : 6000
       /*onChange : function (e) {
         console.log(e.target);
         $('.owl-item.active span').addClass('animated');
@@ -48,7 +70,16 @@ $( '.cycle-gallery #gallery-1' ).cycle({
       /*slideSpeed : 300,
       paginationSpeed : 400,*/
       /*singleItem:true*/
- /*});*/
+ });
+ $(".slider-others #gallery-8" ).cycle({
+        fx: 'scrollHorz',
+        speed: 600,
+        slides: '.gallery-item',
+        pager: '.cycle-pager',
+        next: '.cycle-next',
+        prev: '.cycle-prev'
+      });
+ 
  
  // SMOOTH ANCHOR SCROLLING
     var $root = jQuery('html, body');
@@ -79,6 +110,61 @@ $( '.cycle-gallery #gallery-1' ).cycle({
         }
     });
 
+    $.ajax({
+          type: 'GET',
+          url: '/api/get_posts/?post_type=tour&count=-1',
+          
+          success: function(data){
+             console.log(data)
+             
+            var items = [];
+
+        var select = $('select[name="tour"]').empty();
+          $.each(data.posts, function(i,item) {
+            select.append( '<option value="'
+                                 + $.trim(item.title) + '">'
+                                 + item.title
+                                 + '</option>' ); 
+
+
+     
+      });
+    
+
+     select.prepend('<option value="" selected></option>');
+    
+  
+
+
+
+
+
+
+          },
+          error:function(e){
+             console.log(e);
+             //$('div[data-project="'+ post_id +'"]').find('.content-project').html('<p>Ohh Error</p>');
+          }
+      });
+
+       $('.tours-item-link').on('click',function (e) {
+      
+      
+      //console.log($(this).data('activitie'))
+      $('.wpcf7').find('select[name="tour"] option[value="'+ $(this).data('tour') +'"]').attr("selected",true).change();
+      
+
+      });
+
+      
+ $galleryItems = $('.owl-carousel').find('.gallery-item');
+
+ $galleryItems.each(function( index ) {
+  
+  $title = $( this ).find('img').data('image-title');
+  $( this ).find('figcaption').prepend('<h3>'+ $title +'</h3>');
+  
+});
   /*$(window).scroll(function () {
           if ($(this).scrollTop() > 50) {
               $('.header').addClass("header--fixed");

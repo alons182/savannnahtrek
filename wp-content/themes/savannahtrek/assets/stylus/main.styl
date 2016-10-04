@@ -47,11 +47,26 @@ input[type="text"]
 input[type="number"]
 input[type="email"]
 input[type="url"]
+select
 textarea
 	height 32px
 	width 100%
 textarea
 	height 90px 
+
+.two-columns
+	display flex
+	justify-content space-between
+	flex-wrap wrap
+	p
+		width: 45%
+.two-columns-2
+	display flex
+	justify-content space-between
+	flex-wrap wrap
+	> div
+		width: 45%
+
 .txt-center
 	text-align center
 .overflow
@@ -265,7 +280,7 @@ textarea
 		justify-content space-around
 		
 		.item-tour
-			width 23%
+			width 24%
 			background-color cafeclaro
 			min-height 350px
 			color white
@@ -281,6 +296,9 @@ textarea
 					color amarillo2
 					text-align center
 					font-family Arial
+					font-size .9rem
+			img
+				width 100%
 				
 			.btn
 				position absolute
@@ -400,10 +418,15 @@ textarea
 		width 48%
 		background-color cafeclaro
 		color white
-		padding .5rem
+		padding .5rem .5rem 3rem .5rem
 		margin-bottom .5rem
+		position relative
 		&-img
 			height 180px
+		.btn 
+			position absolute
+			left 0
+			bottom 0
 .cycle-gallery
 	position relative
 	.cycle-prev
@@ -442,8 +465,7 @@ textarea
 		img
 			width 100%
 .ad-combinations
-	background-color amarillo
-	padding .5rem
+	
 	width 300px
 	color #000
 	text-transform uppercase
@@ -451,11 +473,84 @@ textarea
 	font-size 3rem
 	line-height 3rem
 	text-align center
+	&-inner
+		padding .5rem 
+		background-color amarillo
 	span
 		color white
 		font-size 3.3rem 
-		
+
+.owl-carousel
+	width 100%
+	.gallery
+		display flex
+		flex-wrap wrap
+		justify-content space-around
+		.gallery-item
+			width 33.33%
+			height 192px
+			position relative
+			cursor pointer
+			&:hover
+				&:after
+					opacity 1
+				.gallery-caption
+					position absolute 
+					top 1rem
+					padding .5rem
+					line-height 24px
+					z-index 2
+					
+			img
+				width 100%
+				height 192px
+			&:after
+				content ''
+				background-color rgba(0,0,0,.55)
+				color white
+				position absolute
+				top 0
+				bottom 0
+				left 0
+				right 0
+				opacity 0
+	.owl-next
+	.owl-prev
+		position absolute
+		top 50%
+		transform translate(0, -50%)
+		font-size 3rem
+		background-color amarillo
+		padding .2rem .5rem
+	.owl-next
+		right 0
+	.owl-prev
+		left 0
+
+.two-columns-2
+	h3 
+		margin-top 1rem				 
+.slider-others
+	margin-top 2rem
 	
+	.gallery-item
+		height 190px
+		overflow hidden
+		width 100%
+		position relative
+		img 
+			width 100%
+			position absolute
+			top 50%
+			transform translate(0,-50%)
+		figcaption
+			position absolute
+			bottom 0
+			background-color rgba(0,0,0,.55)
+			left 0
+			right 0
+			color white
+			padding 0 .5rem
 .footer
 	background-color cafeoscuro
 	color white

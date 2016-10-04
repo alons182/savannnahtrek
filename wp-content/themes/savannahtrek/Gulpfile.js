@@ -25,7 +25,7 @@ var gulp        = require('gulp'),
 gulp.task('js', function () {
   gulp.src([
       './assets/js/vendor/jquery-3.1.0.min.js',
-      /*'./assets/js/vendor/owl.carousel.js',*/
+      './assets/js/vendor/owl.carousel.js',
       './assets/js/vendor/jquery.hoverIntent.minified.js',
       /*'./assets/js/vendor/jquery.contentcarousel.js',*/
       /*'./assets/js/vendor/wow.js',*/
@@ -33,7 +33,7 @@ gulp.task('js', function () {
       /*'./assets/js/vendor/jquery.isotope.min.js',*/
       /*'./assets/js/vendor/isotope.pkgd.min.js',*/
       
-      /*'./assets/js/vendor/jquery.magnific-popup.min.js',*/
+       './assets/js/vendor/jquery.magnific-popup.min.js',
      /* './assets/js/vendor/typewriter.js',*/
       './assets/js/vendor/jquery.cycle2.min.js',
       /*'./assets/js/vendor/chosen.jquery.min.js',
@@ -64,7 +64,7 @@ gulp.task('stylus', function () {
 });
 
 gulp.task('css', function () {
-  gulp.src(['./assets/css/main.css',/*'./assets/css/owl.carousel.css'*//*,'./assets/css/animate.css'*/,'./assets/css/font-awesome.css'])
+  gulp.src(['./assets/css/main.css','./assets/css/owl.carousel.css', './assets/css/magnific-popup.css','./assets/css/animate.css','./assets/css/font-awesome.css'])
     /*.pipe(minifyCSS({ keepSpecialComments: '*', keepBreaks: '*'}))*/
     /*.pipe(cleanCSS({compatibility: 'ie8'}))*/
     .pipe(concat('style.css'))

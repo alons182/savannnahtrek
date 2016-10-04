@@ -38,20 +38,21 @@ get_header(); ?>
 		                		<div class="tours-item-description">
 		                			<?php the_content(); ?>
 		                		</div>
-		                		<a href="#" class="tours-item-link btn verde">
+		                		<?php $slug = get_post_field( 'post_name', get_post() ); ?>
+		                		<a href="#contact-tour" class="tours-item-link btn verde" data-tour="<?php the_title(); ?>">
 								<?php  if(get_locale() == "es_ES") 
 											    {
-											    	echo "Reserva Ya";
+											    	echo "Consulta Ya";
 
 											    }
 											    if(get_locale() == "en_US") 
 											    {
-											    	echo "Book Now";
+											    	echo "Quote Now";
 
 											    }
 											    if(get_locale() == "fr_FR") 
 											    {
-											    	echo "Reservez";
+											    	echo "Quote Now";
 
 											    }
 											    ?>

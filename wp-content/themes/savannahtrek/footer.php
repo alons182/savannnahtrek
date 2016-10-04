@@ -31,6 +31,7 @@
 		<div class="bosque"></div>	
 		
 	</footer><!-- #colophon -->
+<?php get_template_part( 'template-parts/contact', 'tour' ); ?>
 
 <?php wp_footer(); ?>
 

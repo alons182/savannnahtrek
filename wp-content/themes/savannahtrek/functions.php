@@ -125,6 +125,11 @@ function savannahtrek_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'savannahtrek_scripts' );
 
+function jeherve_custom_tiled_gallery_width() {
+    return '900';
+}
+add_filter( 'tiled_gallery_content_width', 'jeherve_custom_tiled_gallery_width' );
+
 /**
  * Implement the Custom Header feature.
  */
