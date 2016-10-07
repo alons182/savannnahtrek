@@ -15,6 +15,11 @@
       $menu.toggle();
 
   });
+  $menu.find(".menu-item-has-children > a").on('click', function (e) {
+    
+      e.preventDefault();
+
+  });
 
  $menu.find(".menu-item-has-children").hoverIntent({
       over: function() {

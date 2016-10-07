@@ -132,7 +132,7 @@ get_header(); ?>
 								    }
 								    if(get_locale() == "fr_FR") 
 								    {?>
-								    	<a href="<?php echo esc_url( home_url( '/type-tour/adventure' ) ); ?>" class="btn verde">Explorez</a>
+								    	<a href="<?php echo esc_url( home_url( '/type-tour/aventure' ) ); ?>" class="btn verde">Explorez</a>
 									<?php
 								    }?>
 
@@ -204,7 +204,7 @@ get_header(); ?>
 								    }
 								    if(get_locale() == "fr_FR") 
 								    {?>
-								    	<a href="<?php echo esc_url( home_url( '/type-tour/nature' ) ); ?>" class="btn verde">Explorez</a>
+								    	<a href="<?php echo esc_url( home_url( '/type-tour/nature-fr' ) ); ?>" class="btn verde">Explorez</a>
 									<?php
 								    }?>
                    		</div>
@@ -274,7 +274,7 @@ get_header(); ?>
 								    }
 								    if(get_locale() == "fr_FR") 
 								    {?>
-								    	<a href="<?php echo esc_url( home_url( '/type-tour/cultural' ) ); ?>" class="btn verde">Explorez</a>
+								    	<a href="<?php echo esc_url( home_url( '/type-tour/culturel' ) ); ?>" class="btn verde">Explorez</a>
 									<?php
 								    }?>
                    		</div>
@@ -306,7 +306,7 @@ get_header(); ?>
 								    }
 								    if(get_locale() == "fr_FR") 
 								    {?>
-								    	<a href="<?php echo esc_url( home_url( '/contacto' ) ); ?>" class="btn verde">Explorez</a>
+								    	<a href="<?php echo esc_url( home_url( '/contact' ) ); ?>" class="btn verde">Explorez</a>
 									<?php
 								    }?>
 

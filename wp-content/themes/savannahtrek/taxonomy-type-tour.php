@@ -52,7 +52,7 @@ get_header(); ?>
 											    }
 											    if(get_locale() == "fr_FR") 
 											    {
-											    	echo "Quote Now";
+											    	echo "Plus d'info";
 
 											    }
 											    ?>

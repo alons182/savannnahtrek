@@ -43,7 +43,7 @@
 			<div class="header-banner-info">
 			    <?php  if(get_locale() == "es_ES") 
 					    {
-					    	echo "DELE RIENDA SUELTA A SU <br/> ¡ESPÍRITU DE AVENTURA !";
+					    	echo "DELE RIENDA SUELTA A <br/>SU ¡ESPÍRITU DE AVENTURA !";
 
 					    }
 					    if(get_locale() == "en_US") 
@@ -80,7 +80,7 @@
                       ); 
                       ?>
 			 <button id="btn-menu" class="header-btn-menu">
-	            <i class="icon-menu"></i>
+	            <i class="fa fa-bars"></i>
 	        </button>
 	</header><!-- #masthead -->
 
