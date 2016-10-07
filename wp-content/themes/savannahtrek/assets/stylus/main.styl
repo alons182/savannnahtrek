@@ -247,8 +247,25 @@ textarea
 		border none
 		width 100%
 		font-size 2rem
+
+@media screen and (min-width:480px)
+	.header
 		
-@media screen and (min-width:980px)
+		&-branding
+			font-size 40px
+@media screen and (min-width:640px)
+	.header
+		&-top 
+			display flex
+			flex-wrap wrap 
+			justify-content space-around
+		&-tagline
+			width 30%
+			padding-top 2rem
+		&-branding
+			width 70%
+		
+@media screen and (min-width:890px)
 	.header
 		&-top 
 			display flex
@@ -275,6 +292,9 @@ textarea
 			&-info
 				font-size 2.5rem
 		
+		
+@media screen and (min-width:980px)
+	.header
 		&-menu
 			background-color cafeclaro
 			color amarillo
@@ -289,8 +309,7 @@ textarea
 				margin .3rem .3rem
 				position relative
 		&-btn-menu
-			display none
-			
+			display none		
 .main
 	margin 1rem 0 
 	h1

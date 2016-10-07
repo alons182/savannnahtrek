@@ -836,7 +836,41 @@ textarea {
   width: 100%;
   font-size: 2rem;
 }
-@media screen and (min-width: 980px) {
+@media screen and (min-width: 480px) {
+  .header-branding {
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 640px) {
+  .header-top {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    -o-box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: distribute;
+    -moz-box-pack: distribute;
+    -o-box-pack: distribute;
+    -ms-flex-pack: distribute;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+  }
+  .header-tagline {
+    width: 30%;
+    padding-top: 2rem;
+  }
+  .header-branding {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 890px) {
   .header-top {
     display: -webkit-box;
     display: -moz-box;
@@ -880,6 +914,8 @@ textarea {
   .header-banner-info {
     font-size: 2.5rem;
   }
+}
+@media screen and (min-width: 980px) {
   .header-menu {
     background-color: #392100;
     color: #fa0;
