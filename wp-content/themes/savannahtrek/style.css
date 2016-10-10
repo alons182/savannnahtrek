@@ -745,6 +745,10 @@ textarea {
 .header-banner {
   height: 344px;
   position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-position: center center;
 }
 .header-banner-info {
   color: #fff;
@@ -755,6 +759,7 @@ textarea {
   max-width: 380px;
   line-height: 2.5rem;
   position: absolute;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.75);
   top: 30%;
   left: 2rem;
 }
@@ -1033,7 +1038,7 @@ textarea {
   color: #ffc13d;
   text-align: center;
   font-family: Arial;
-  font-size: 0.9rem;
+  font-size: 1.5rem;
 }
 .featured-tours-items .item-tour img {
   width: 100%;
@@ -1043,9 +1048,22 @@ textarea {
   bottom: 0;
   right: 0;
 }
+@media screen and (min-width: 480px) {
+  .featured-tours-items .item-tour {
+    width: 48%;
+  }
+}
+@media screen and (min-width: 680px) {
+  .featured-tours-items .item-tour {
+    width: 32%;
+  }
+}
 @media screen and (min-width: 980px) {
   .featured-tours-items .item-tour {
     width: 24%;
+  }
+  .featured-tours-items .item-tour-content h3 {
+    font-size: 0.9rem;
   }
 }
 .contact-container iframe {
@@ -1418,7 +1436,7 @@ textarea {
   color: #000;
   text-transform: uppercase;
   font-family: 'Anton';
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 3rem;
   text-align: center;
 }

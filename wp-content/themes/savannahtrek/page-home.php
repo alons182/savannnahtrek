@@ -69,7 +69,7 @@ get_header(); ?>
 			<div class="featured-tours-items">
                    <div class="item-tour">
                    		<div class="item-tour-image">
-                   			<img src="<?php echo get_template_directory_uri();  ?>/img/adventure.png" alt="Savannah Trek - Adventure">
+                   			<img src="<?php echo get_template_directory_uri();  ?>/img/feature-adventure.jpg" alt="Savannah Trek - Adventure">
                    		</div>
                    		<div class="item-tour-content">
                    			<h3>
@@ -143,7 +143,7 @@ get_header(); ?>
                    </div>
                     <div class="item-tour">
                    		<div class="item-tour-image">
-                   			<img src="<?php echo get_template_directory_uri();  ?>/img/nature.png" alt="Savannah Trek - nature">
+                   			<img src="<?php echo get_template_directory_uri();  ?>/img/feature-nature.jpg" alt="Savannah Trek - nature">
                    		</div>
                    		<div class="item-tour-content">
                    			<h3>
@@ -213,7 +213,7 @@ get_header(); ?>
                    </div>
                     <div class="item-tour">
                    		<div class="item-tour-image">
-                   			<img src="<?php echo get_template_directory_uri();  ?>/img/cultural.jpg" alt="Savannah Trek - cultural">
+                   			<img src="<?php echo get_template_directory_uri();  ?>/img/feature-cultural.jpg" alt="Savannah Trek - cultural">
                    		</div>
                    		<div class="item-tour-content">
                    			<h3>
@@ -283,7 +283,7 @@ get_header(); ?>
                    </div>
                     <div class="item-tour">
                    		<div class="item-tour-image">
-                   			<img src="<?php echo get_template_directory_uri();  ?>/img/full-program.png" alt="Savannah Trek - Ultimate Costa Rica Full Program">
+                   			<img src="<?php echo get_template_directory_uri();  ?>/img/feature-full-program.jpg" alt="Savannah Trek - Ultimate Costa Rica Full Program">
                    		</div>
                    		<div class="item-tour-content">
                    		<?php rewind_posts(); ?>

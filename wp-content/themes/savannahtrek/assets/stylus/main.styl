@@ -166,6 +166,9 @@ textarea
 	&-banner
 		height 344px
 		position relative
+		background-size cover
+		background-position center center
+		
 		&-info
 			color white
 			font-family 'Anton'
@@ -175,6 +178,7 @@ textarea
 			max-width 380px
 			line-height 2.5rem
 			position absolute
+			text-shadow 1px 1px 2px rgba(0,0,0,0.75)
 			top 30%
 			left 2rem
 		.languages
@@ -388,19 +392,32 @@ textarea
 					color amarillo2
 					text-align center
 					font-family Arial
-					font-size .9rem
+					font-size 1.5rem//.9rem
 			img
 				width 100%
 				
 			.btn
 				position absolute
 				bottom 0
-				right 0	
+				right 0
+@media screen and (min-width:480px)
+	.featured-tours
+		&-items
+			.item-tour
+				width 48%
+@media screen and (min-width:680px)
+	.featured-tours
+		&-items
+			.item-tour
+				width 32%	
 @media screen and (min-width:980px)
 	.featured-tours
 		&-items
 			.item-tour
 				width 24%
+				&-content 
+					h3
+						font-size .9rem
 .contact-container
 	iframe
 		width 100%
@@ -595,7 +612,7 @@ textarea
 	color #000
 	text-transform uppercase
 	font-family 'Anton'
-	font-size 3rem
+	font-size 2.5rem
 	line-height 3rem
 	text-align center
 	&-inner
