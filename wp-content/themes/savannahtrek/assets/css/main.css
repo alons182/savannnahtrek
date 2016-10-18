@@ -1621,6 +1621,7 @@ textarea {
 }
 .footer .rent-a-car a {
   color: #fa0;
+  font-weight: bold;
 }
 .footer .rent-a-car img {
   width: 100%;

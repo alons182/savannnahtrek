@@ -24,7 +24,22 @@
 			</div><!-- .site-info -->
 			
 			<div class="rent-a-car">
-			<span>Need a car? <a href="https://toyotarent.com/?agent=SVNT506&amp;code=WebTRACSVNT&amp;partner=SavannahTrek" target="_blank" >Click here</a></span>
+			<?php  if(get_locale() == "es_ES") 
+					    {?>
+					    	<span>Necesitas un Auto? <a href="https://toyotarent.com/?agent=SVNT506&amp;code=WebTRACSVNT&amp;partner=SavannahTrek" target="_blank" >Click Aquí</a></span>
+						<?php
+					    }
+					    if(get_locale() == "en_US") 
+					    {?>
+					    	<span>Need a car? <a href="https://toyotarent.com/?agent=SVNT506&amp;code=WebTRACSVNT&amp;partner=SavannahTrek" target="_blank" >Click here</a></span>
+						<?php
+					    }
+					    if(get_locale() == "fr_FR") 
+					    {?>
+					    	<span>besoin d'une voiture? <a href="https://toyotarent.com/?agent=SVNT506&amp;code=WebTRACSVNT&amp;partner=SavannahTrek" target="_blank" >Cliquez ici</a></span>
+						<?php
+					    }?>
+			
 			<a href="https://toyotarent.com/?agent=SVNT506&amp;code=WebTRACSVNT&amp;partner=SavannahTrek" target="_blank" ><img class="alignnone wp-image-938 size-full" src="http://www.savannahtrekcr.com/wp-content/uploads/2016/09/toyota-rent-a-car.jpg" alt="toyota-rent-a-car" width="470" height="157" /></a>
 			</div>
 			<div class="footer-social">
