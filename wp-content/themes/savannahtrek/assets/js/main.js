@@ -117,7 +117,7 @@ $('.tours-item-link ').magnificPopup({
 
     $.ajax({
           type: 'GET',
-          url: '/savannahtrek/api/get_posts/?post_type=tour&count=-1',
+          url: '/api/get_posts/?post_type=tour&count=-1',
           
           success: function(data){
              //console.log(data)
