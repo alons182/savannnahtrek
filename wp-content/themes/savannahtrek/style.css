@@ -1594,6 +1594,7 @@ textarea {
   overflow: hidden;
   position: relative;
   z-index: 2;
+  text-align: center;
 }
 .footer .bosque {
   height: 210px;
@@ -1608,6 +1609,21 @@ textarea {
 }
 .footer .site-info span {
   display: block;
+}
+.footer .rent-a-car {
+  max-width: 300px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+}
+.footer .rent-a-car span {
+  display: block;
+}
+.footer .rent-a-car a {
+  color: #fa0;
+}
+.footer .rent-a-car img {
+  width: 100%;
 }
 .footer-social {
   float: right;
