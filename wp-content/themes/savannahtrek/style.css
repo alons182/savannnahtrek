@@ -553,7 +553,7 @@ h5 {
   font-family: 'Anton', sans-serif;
   margin-top: 0;
   font-weight: 800;
-  color: #333;
+  color: #fa0;
 }
 h1 {
   line-height: 45px;
@@ -1141,6 +1141,19 @@ textarea {
   border-top-color: #000;
   border-right-width: 0;
   left: 0;
+}
+.search .entry-banner,
+.error404 .entry-banner,
+.archive .entry-banner,
+.single .entry-banner,
+.blog .entry-banner {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 250px;
+  width: 100%;
 }
 .search .site-content,
 .error404 .site-content,
