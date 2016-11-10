@@ -31,26 +31,24 @@
 				'after'  => '</div>',
 			) );
 		?>
-		<a href="#" class="btn">
-			
+		<a href="#contact-tour" class="tours-item-link btn verde" data-tour="<?php the_title(); ?>">
 			<?php  if(get_locale() == "es_ES") 
-			    {
-			    	echo "Reserva Ya";
+						    {
+						    	echo "Consulta Ya";
 
-			    }
-			    if(get_locale() == "en_US") 
-			    {
-			    	echo "Book Now";
+						    }
+						    if(get_locale() == "en_US") 
+						    {
+						    	echo "Quote Now";
 
-			    }
-			    if(get_locale() == "fr_FR") 
-			    {
-			    	echo "Reserva Ya";
+						    }
+						    if(get_locale() == "fr_FR") 
+						    {
+						    	echo "Plus d'info";
 
-			    }
-			    ?>
-
-		</a>
+						    }
+						    ?>
+    		</a>
 	</div><!-- .entry-content -->
 
 	<?php if ( get_edit_post_link() ) : ?>
