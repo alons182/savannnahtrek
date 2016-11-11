@@ -1180,6 +1180,13 @@ textarea {
   justify-content: space-between;
   margin-top: 1rem;
 }
+.search .site-content a:hover,
+.error404 .site-content a:hover,
+.archive .site-content a:hover,
+.single .site-content a:hover,
+.blog .site-content a:hover {
+  text-decoration: underline;
+}
 .search .content-area,
 .error404 .content-area,
 .archive .content-area,
