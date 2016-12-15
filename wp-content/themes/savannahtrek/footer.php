@@ -43,7 +43,7 @@
 			<a href="https://toyotarent.com/?agent=SVNT506&amp;code=WebTRACSVNT&amp;partner=SavannahTrek" target="_blank" ><img class="alignnone wp-image-938 size-full" src="http://www.savannahtrekcr.com/wp-content/uploads/2016/09/toyota-rent-a-car.jpg" alt="toyota-rent-a-car" width="470" height="157" /></a>
 			</div>
 			<div class="footer-social">
-				<a href="https://www.facebook.com/savannahtrekcr" target="_blank"><i class="fa fa-facebook"></i></a>
+				<a href="https://www.facebook.com/savannahtrekcr" target="_blank" title="facebook"><i class="fa fa-facebook"></i></a>
 				<!--<a href="#"><i class="fa fa-twitter"></i></a>
 				<a href="#"><i class="fa fa-google-plus"></i></a>-->
 			</div>
