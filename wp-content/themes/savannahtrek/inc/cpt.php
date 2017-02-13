@@ -18,6 +18,7 @@ function my_taxonomies_tours() {
   $args = array(
     'labels' => $labels,
     'hierarchical' => true,
+    /*'rewrite'      => array('slug' => 'type-tour', 'with_front' => false)*/
   );
   register_taxonomy( 'type-tour', 'tour', $args );
 }
