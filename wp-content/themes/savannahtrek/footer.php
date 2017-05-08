@@ -63,7 +63,24 @@
 
   ga('create', 'UA-69662015-1', 'auto');
   ga('send', 'pageview');
-
+   
+    var wpcf7ElmTours = document.querySelector( '#contact-tour' ); //form tours
+    var wpcf7ElmContact = document.querySelector( '.contact-form' ); //form contact
+    
+   
+     if(wpcf7ElmTours)
+    {
+         wpcf7ElmTours.addEventListener( 'wpcf7submit', function( event ) {
+            ga('send', 'event', 'Tours Form', 'submit');
+        }, false );
+     }
+      if(wpcf7ElmContact)
+    {
+          wpcf7ElmContact.addEventListener( 'wpcf7submit', function( event ) {
+            ga('send', 'event', 'Contact Form', 'submit');
+        }, false );
+      }
+   
 </script>
 
 </body>
