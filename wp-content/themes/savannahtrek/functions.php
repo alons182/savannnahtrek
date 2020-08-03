@@ -158,8 +158,8 @@ require get_template_directory() . '/inc/jetpack.php';
 require get_template_directory() . '/inc/cpt.php';
 
     // fix polylang language segmentation
-	add_action( 'rest_api_init' , array( $this, 'polylang_json_api_init') );
-	add_action( 'rest_api_init' , array( $this, 'polylangroute' ) );
+	add_action( 'rest_api_init' , 'polylang_json_api_init' );
+	add_action( 'rest_api_init' ,  'polylangroute'  );
 
 function polylang_json_api_init(){
 	global $polylang;
