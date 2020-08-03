@@ -130,8 +130,8 @@ $('.tours-item-link ').magnificPopup({
         var select = $('select[name="tour"]').empty();
           $.each(data, function(i,item) {
             select.append( '<option value="'
-                                 + $.trim(item.title.rendered) + '">'
-                                 + item.title.rendered
+                                 + $.trim(item.post_title) + '">'
+                                 + item.post_title
                                  + '</option>' ); 
 
 
