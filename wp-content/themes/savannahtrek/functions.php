@@ -157,6 +157,11 @@ require get_template_directory() . '/inc/jetpack.php';
 
 require get_template_directory() . '/inc/cpt.php';
 
+add_filter('rest_prepare_tour', function($response, $post, $request){
+	$response->data['lang'] = pll_get_post_language($post->ID);
+	return $response;
+}, 99, 3);
+
 function polylang_json_api_init() {
 	global $polylang;
   
