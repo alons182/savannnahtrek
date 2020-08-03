@@ -8,7 +8,7 @@ function get_tours($request){
     
     $args = array(
         'post_type' => 'tour',
-        //'order' => 'ASC',
+        'lang' => $request['lang'],
         'orderby' => array('menu_order' => 'ASC', 'title' => 'ASC'),
         'posts_per_page' => -1,
        
