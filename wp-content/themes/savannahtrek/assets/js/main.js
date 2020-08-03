@@ -115,9 +115,12 @@ $('.tours-item-link ').magnificPopup({
         }
     });
 
+    var lang = $('html').attr('lang').slice(1,2);
+   
+    
     $.ajax({
           type: 'GET',
-          url: '/wp-json/alo/v1/tours',//'/api/get_posts/?post_type=tour&count=-1',
+          url: '/wp-json/alo/v1/tours?lang='+ lang,//'/api/get_posts/?post_type=tour&count=-1',
           
           success: function(data){
              //console.log(data)
