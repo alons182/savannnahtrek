@@ -117,7 +117,7 @@ $('.tours-item-link ').magnificPopup({
 
     $.ajax({
           type: 'GET',
-          url: '/api/get_posts/?post_type=tour&count=-1',
+          url: '/wp-json/wp/v2/tour',//'/api/get_posts/?post_type=tour&count=-1',
           
           success: function(data){
              //console.log(data)

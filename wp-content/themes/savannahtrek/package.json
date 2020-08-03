@@ -1,7 +1,6 @@
 {
   "name": "verdecolina",
   "version": "0.0.1",
-
   "devDependencies": {
     "browser-sync": "^2.2.1",
     "gulp-uglify": "^0.3.0",
@@ -12,5 +11,4 @@
     "gulp-stylus": "^2.0.0",
     "nib": "^1.1.0"
   }
-
 }
