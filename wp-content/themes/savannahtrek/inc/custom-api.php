@@ -4,7 +4,7 @@
 
 function get_tours($request){
 
-    var_dump($request['lang']);
+    die(var_dump($request['lang']));
     
     $args = array(
         'post_type' => 'tour',
