@@ -115,7 +115,7 @@ $('.tours-item-link ').magnificPopup({
         }
     });
 
-    var lang = $('html').attr('lang').slice(1,2);
+    var lang = $('html').attr('lang').slice(0,2);
    
     
     $.ajax({
